@@ -37,11 +37,18 @@
 }
 
 #hpage{
-    background-color: rgb(82, 161, 187);
+    /* background-color: rgb(82, 161, 187);
     border-style: solid;
     border-color: black;
     border-radius: 30px;
     width: 100%;
-    height: 950px
+    height: 950px */
 
+}
+
+body {
+    background-image: url("sky-clouds.gif");
+    background-size: cover; /* Adjust the size to cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    animation: infiniteBackground 10s linear infinite; /* Set the animation */
 }
