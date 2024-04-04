@@ -3,10 +3,37 @@
     padding-top: 300px;
 }
 
-#name{
+#name {
     font-size: 30px;
     font-family: Verdana;
     text-align: center;
+    position: relative;
+}
+
+@keyframes moveToRight {
+    from {
+        left: 0;
+    }
+    to {
+        left: -700px; /* Adjust the distance as needed */
+    }
+}
+
+.input-move {
+    animation: moveToRight 0.5s ease forwards; 
+}
+
+@keyframes moveToLeft {
+    from {
+        left: -700px; /* Adjust the distance to match the previous animation */
+    }
+    to {
+        left: 0; /* Return to the original position */
+    }
+}
+
+.input-moveBack {
+    animation: moveToLeft 0.5s ease forwards;
 }
 
 #hpage{
